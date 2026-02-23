@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Les MEILLEURS endroits a visiter en France!!</title>
+</head>
+
+<body class="fond-accueil home" id="page">
+   <div class="contenu">
+  <br>
+  <br>
+<h1>Top 3 des meilleurs endroits à visiter en France !</h1>
+  <p>Choisir un endroit ou aller pour les vacance? Une vrai corvée!C'est pour cela que nous vous avons fait cette liste,avec tout ce qu'il y a de plus passionant a faire.
+  <br></p>
+  <h2>Dans notre top 3:</h2>
+  <ul>
+    <li>Paris : Ses places iconiques et merveilleuses </li>
+    <br>
+     <li>Les landes : Ses plages et fôret</li>
+    <br>
+     <li></li>
+    <br>
+    <p>Pour finir, nous vous proposerons un petit  <a style="color: #C07AEB; text-decoration-color: #C07AEB;" href="#qcm">QCM </a>  !</p>
+    <table>
+    <tr><a href="paris.html" class="lien-paris">
+  <img src="paris.jpg" alt="Paris mon amie" title="Paris mon amie" width="300">
+</a> </tr>
+    <tr><a href="LeSudouest.html"> <img src="az.jpg" alt="magnifique🦄"  title="images des pins du sud ouest (magnifique🦄)"width="250"</a></tr>
+          <tr><a href="QCM.html"><img src="QCM.avif" alt="Le Cantal on adore"  title="QCM primee" width="225"></a> </tr>
+    </table>
+  </ul>
+              <p>Sources :
+<a style="color: #C07AEB; text-decoration-color: #C07AEB;"
+href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal">
+   Wikipédia ,</a>  <a style="color: #C07AEB; text-decoration-color: #C07AEB;"
+href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal">Tripadvisor ,</a>  <a style="color: #C07AEB; text-decoration-color: #C07AEB;"
+href="https://parissecret.com/rue-du-chat-qui-peche/">
+   parissecret </a>.</p>
+  <script>
+  lienParis.addEventListener("click", function(e) {
+  e.preventDefault();
+  
+  page.classList.add("fade-paris");
+
+  setTimeout(() => {
+    window.location.href = "paris.html";
+  }, 500);
+});
+</script>
+    <div id="qcm"></div>
+</body>
+</html>
