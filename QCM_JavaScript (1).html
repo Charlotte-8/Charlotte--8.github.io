@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Titre de la page</title>
+</head>
+<body class="qcm">
+     <div id="haut"></div>
+   <div class="contenu">
+  <h1><u style="text-decoration-color: #ED5234;  text-decoration-thickness: 2px;" id="lolo">QCM</u></h1>
+  <p style="color: black;">
+    <u id="lia" style="text-decoration-color: #ED5234;color: black;">Avez vous bien ce lu site internet?</u> Avez vous bien retenu les informations données?
+    Voici un petit QCM pour tester vos connaissances sur
+    <a class="lien"  style="color: #ED5234; text-decoration-color: #ED5234;"href="paris.html" class="lien-paris">Paris</a>
+    et sur <a class="lien"  style="color: #ED5234; text-decoration-color: #ED5234;" href="LeSudouest.html" >le Sud ouest !</a>
+  </p>
+
+  <h3>Vrai ou Faux ??</h3>
+
+  <ul>
+    <li style="color: black;">
+      Le nom de la rue du chat qui pêche vient d'une rumeur qui disait qu'un chat pêchait à cet endroit<br><br>
+
+      <input type="radio" name="az" id="choix1" value="Vrai">
+      <label id="labelVrai" for="choix1">Vrai</label>
+
+      <input type="radio" name="az" id="choix2" value="Faux">
+      <label id="labelFaux" for="choix2">Faux</label>
+
+      <br><br>
+
+      <input class="ab" type="button"  style="  background-color: #ED5234;  border: none; color: white; padding: 5px 10px; font-size: 16px; border-radius: 5px; cursor: pointer; 
+  transition: background-color 0.3s ease;  "  id="btnValider" value="Valider" onclick="MaFonction()">
+      <p id="resultat"></p>
+    </li>
+  </ul>
+  <script>
+    var score = 0
+    function MaFonction() {
+      const resultat = document.getElementById('resultat')
+      const checked = document.querySelector('input[name="az"]:checked')
+      const labelVrai = document.getElementById('labelVrai')
+      const labelFaux = document.getElementById('labelFaux')
+if (checked.value === "Faux") {
+  labelFaux.style.color = "green"
+  score++;
+  resultat.textContent = "Bien joué :) ! Votre score est de : " + score + "/5 🌟"
+} else {
+  labelVrai.style.color = "red"
+  resultat.textContent = "Dommage…  :( Le nom vient d'un ancien poissonnier ! Votre score est de : " + score + "/5 🌟"
+}
+       document.getElementById('btnValider').disabled = true
+    }
+  </script>
+<p style="color: black;">Le fromage 🧀 c'est trop bon </p>
+  
+      <input type="radio" name="al" id="choix1bis" value="Vrai">
+      <label id="labelVraibis" for="choix1bis">Vrai</label>
+
+      <input  type="radio" name="al" id="choix2bis" value="Faux">
+      <label id="labelFauxbis" for="choix2bis">Faux</label>
+    <br><br>
+
+      <input class="ab" type="button"   style="  background-color: #ED5234;  border: none; color: white; padding: 5px 10px; font-size: 16px; border-radius: 5px; cursor: pointer; 
+  transition: background-color 0.3s ease;  " style="border-color:#ED5234; " id="btnValiderbis" value="Valider" onclick="MaFonctionbis()">
+      <p id="resul"></p>
+    <script>
+    function MaFonctionbis() {
+      const resultat = document.getElementById('resul')
+      const checked = document.querySelector('input[name="al"]:checked')
+      const labelVraibis = document.getElementById('labelVraibis')
+      const labelFauxbis = document.getElementById('labelFauxbis')
+if (checked.value === "Vrai") {
+  labelVraibis.style.color = "green"
+  score++;
+  resul.textContent = "Bien joué :) ! Votre score est de : " + score + "/5 🌟"
+} else {
+  labelFauxbis.style.color = "red"
+  resul.textContent = "Dommage…  :(  Très subjectif mais c'est évidemment délicieux ! Vous devriez essayer le Saint-Nectaire ;) Votre score est de : " + score + "/5 🌟"
+}
+       document.getElementById('btnValiderbis').disabled = true
+    }
+  </script>
+  <h3> Complétez ✨</h3>
+  <p style="color: black;">Quel est le nom de la plus grande vague de France ?</p>
+  <FORM>
+ <input type="text" name="Valeur_Reponse" id="Id_Reponse" value="" />
+    <br><br>
+ <input class="ab" type="button"   style="  background-color: #ED5234;  border: none; color: white; padding: 5px 10px; font-size: 16px; border-radius: 5px; cursor: pointer; 
+  transition: background-color 0.3s ease;  " style="border-color:#ED5234; " id="Validerr" value="Valider" onclick="Ma();" />
+</FORM>
+<p id='resu'></p>
+
+<script>
+function Ma()
+{
+        const resu = document.getElementById('resu')
+    var reponse = document.getElementById("Id_Reponse").value;
+    if (reponse=='La belharra')
+    {
+  score++;
+  resu.textContent = "Bien joué :) ! Votre score est de : " + score + "/5 🌟"
+    }
+    else if  (reponse=='La Belharra')
+    {
+      score++;
+  resu.textContent = "Bien joué :) ! Votre score est de : " + score + "/5 🌟"
+      
+    }
+    else if  (reponse=='Belharra')
+    {
+      score++;
+  resu.textContent = "Bien joué :) ! Votre score est de : " + score + "/5 🌟"
+    }
+    else if  (reponse=='la Belharra')
+    {
+      score++;
+  resu.textContent = "Bien joué :) ! Votre score est de : " + score + "/5 🌟"
+    }
+         else if  (reponse=='la belharra')
+    {
+      score++;
+  resu.textContent = "Bien joué :) ! Votre score est de : " + score + "/5 🌟"
+    }
+    else if  (reponse=='belharra')
+      {
+      score++;
+  resu.textContent = "Bien joué :) ! Votre score est de : " + score + "/5 🌟"
+      }
+   else if  (reponse=='belarra')
+   {
+     score++;
+  resu.textContent = "Petite faute d'othographe (ça s'écrit Belharra ) mais bien joué :) ! Votre score est de : " + score + "/5 🌟"
+   }
+    else
+   {
+	   resu.textContent = "Dommage… Votre score est de : " + score + "/5 🌟";}
+ document.getElementById('Validerr').disabled = true
+}
+</script>
+  <h3>Choississez bien 👀🧐</h3>
+  <p style="color: black;">Combien de m² mesure le jardin du lycée Victor Duruy ?</p>
+<select id="choix" name="surface">
+  <option value=""> Choisir une surface </option>
+<option value="670"> 670m²</option>
+<option value="1000"> 1000m²</option>
+<option value="5900"> 5900m² </option>
+<option value="6500"> 6500m² </option>
+</select>
+    <br><br>
+ <input class="ab" type="button"   style="  background-color: #ED5234;  border: none; color: white; padding: 5px 10px; font-size: 16px; border-radius: 5px; cursor: pointer; 
+  transition: background-color 0.3s ease;  " style="border-color:#ED5234; " id="Valideer" value="Valider" onclick="selection()" />
+    <p id='coucou'></p>
+<script>
+ function selection() {
+  const coucou = document.getElementById('coucou')
+  const selecteur = document.getElementById("choix")
+  const monChoix = selecteur[selecteur.selectedIndex]
+  if (monChoix.value === "6500") {
+    score++
+    coucou.textContent = "Trop fort(e) !:) Votre score est de : " + score + "/5 🌟"
+  } else if (monChoix.value === "5900") {
+    coucou.textContent = "Presque ! Dommage :( Votre score est de : " + score + "/5 🌟"
+  } else {
+    coucou.textContent = "C'est plus grand ! Dommage… Votre score est de : " + score + "/5 🌟"
+  }
+  document.getElementById('Valideer').disabled = true
+}
+</script>
+    <p style="color: black;">Selon cet incroyable site internet, quelle est la meilleure activité à faire dans le sud ouest ? (encore plus subjectif que le fromage, mais c'est OK )</p>
+  <body>
+<select id="choixx" name="act">
+  <option value="">Choisir une activité ✨</option>
+  <option value="vélo">Du vélo 🚲</option>
+  <option value="dét">Se détendre sur la plage et bronzer🏖️</option>
+  <option value="rien">Ne rien faire</option>
+  <option value="surf">Du surf 🏄🏾‍♀️</option>
+</select>
+<br><br>
+<input class="ab" type="button"   style="  background-color: #ED5234;  border: none; color: white; padding: 5px 10px; font-size: 16px; border-radius: 5px; cursor: pointer; 
+  transition: background-color 0.3s ease;  " style="border-color:#ED5234; " id="Validder" value="Valider" onclick="selectionn()" />
+<p id='cc'></p>
+<script>
+function selectionn() {
+  const coucou = document.getElementById('cc');
+  const selecteur = document.getElementById("choixx");
+  const monChoix = selecteur[selecteur.selectedIndex];
+  if (monChoix.value === "rien") {
+    coucou.textContent = "Bha quand même :( Votre score est de : " + score + "/6 🌟";
+  } else if (monChoix.value === "surf"){
+    score++;
+    score++;
+    coucou.textContent = "Evidemment 🥳! (double point eheh) Votre score est de : " + score + "/5 🌟";
+  } else {
+    score++;
+    coucou.textContent = "Pas le meilleur mais reste super !✨ (ça compte quand même) Votre score est de : " + score + "/5 🌟";
+  }
+  document.getElementById('Validder').disabled = true;
+}
+</script>
+
+ <h3>Vous avez fini ?</h3>
+<input class="ab" type="button"  style="  background-color: #ED5234;  border: none; color: white; padding: 5px 10px; font-size: 16px; border-radius: 5px; cursor: pointer; 
+  transition: background-color 0.3s ease;  " style="border-color:#ED5234; " id="Valider" value="Valider" onclick="sel()" />
+
+<script>
+function sel() {
+  if (score === 6) {
+    alert('Incroyable 🥳🥳🥳 ! Votre score est de : ' + score + '/5 🌟');
+    document.querySelectorAll('.lien, a[style*="#ED5234"]').forEach(el => {
+      el.style.color = 'yellow';
+      el.style.textDecorationColor = 'yellow';
+    });
+    const lia = document.getElementById('lia');
+    if (lia) lia.style.textDecorationColor = 'yellow';
+    document.querySelectorAll('.ab').forEach(bouton => {
+      bouton.style.backgroundColor = 'yellow';
+      bouton.style.color = 'white';
+    });
+    const lolo = document.getElementById('lolo');
+    if (lolo) lolo.style.textDecorationColor = 'yellow';
+    document.querySelectorAll('.ab').forEach(bouton => {
+      bouton.style.backgroundColor = 'yellow';
+      bouton.style.color = 'white';
+    });
+    document.getElementById("feu").innerHTML = '<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbG0zcDkzc3VwMTRmd3FyMGpxbGVseWd0NWlnanZkNGRwMmpzZnhycCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/geL1pDlmZwpvqVQp6V/giphy.gif">';
+  }
+  else if (score === 5 || score === 4) {
+    alert("Slayyy ! Votre score est de : " + score + "/5 🌟");
+    document.querySelectorAll('.lien, a[style*="#ED5234"]').forEach(el => {
+      el.style.color = 'green';
+      el.style.textDecorationColor = 'green';
+    });
+        const lolo = document.getElementById('lolo');
+    if (lolo) lolo.style.textDecorationColor = 'green';
+    document.querySelectorAll('.ab').forEach(bouton => {
+      bouton.style.backgroundColor = 'green';
+      bouton.style.color = 'white';
+    });
+    const lia = document.getElementById('lia');
+    if (lia) lia.style.textDecorationColor = 'green';
+    document.querySelectorAll('.ab').forEach(bouton => {
+      bouton.style.backgroundColor = 'green';
+      bouton.style.color = 'white';
+    });
+  }
+  else if (score === 1 || score === 2) {
+    alert("Dommage... Votre score est de : " + score + "/5 :(");
+    document.querySelectorAll('.lien, a[style*="#ED5234"]').forEach(el => {
+      el.style.color = 'red';
+      el.style.textDecorationColor = 'red';
+    });
+        const lolo = document.getElementById('lolo');
+    if (lolo) lolo.style.textDecorationColor = 'red';
+    document.querySelectorAll('.ab').forEach(bouton => {
+      bouton.style.backgroundColor = 'red';
+      bouton.style.color = 'white';
+    });
+    const lia = document.getElementById('lia');
+    if (lia) lia.style.textDecorationColor = 'red';
+    document.querySelectorAll('.ab').forEach(bouton => {
+      bouton.style.backgroundColor = 'red';
+      bouton.style.color = 'white';
+    });
+  }
+  else {
+    alert("👀 Votre score est de : " + score + "/5 😔");
+    document.querySelectorAll('.lien, a[style*="#ED5234"]').forEach(el => {
+      el.style.color = 'black';
+      el.style.textDecorationColor = 'black';
+    });
+        const lolo = document.getElementById('lolo');
+    if (lolo) lolo.style.textDecorationColor = 'black';
+    document.querySelectorAll('.ab').forEach(bouton => {
+      bouton.style.backgroundColor = 'black';
+      bouton.style.color = 'white';
+    });
+    const lia = document.getElementById('lia');
+    if (lia) lia.style.textDecorationColor = 'black';
+    document.querySelectorAll('.ab').forEach(bouton => {
+      bouton.style.backgroundColor = 'black';
+      bouton.style.color = 'white';
+    });
+  }
+}
+
+</script>
+    <div id="feu"></div>
+      <p style="color: black;">Pour retourner à la page d'acceuil,cliquez<a  class="lien" style="color: #ED5234; text-decoration-color: #ED5234;" href="index.html"> ici</a></p>
+  <p style="color: black;">Pour retouner en haut ,cliquez <a  class="lien" style="color: #ED5234; text-decoration-color: #ED5234;" href="#haut">ici</a></p>
+<input t class="ab" type="button"   style="  background-color: #ED5234;  border: none; color: white; padding: 5px 10px; font-size: 16px; border-radius: 5px; cursor: pointer; 
+  transition: background-color 0.3s ease;  " style="border-color:#ED5234; " id="reset" value="Recommencer le QCM" onclick="resetQCM()" />
+<script>
+function resetQCM() {
+  score = 0;
+  document.querySelectorAll('.lien, a[style*="#ED5234"]').forEach(el => {
+    el.style.color = '#ED5234';
+    el.style.textDecorationColor = '#ED5234';
+  });
+  const lolo = document.getElementById('lolo');
+  if (lolo) lolo.style.textDecorationColor = '#ED5234';
+  document.querySelectorAll('.ab').forEach(bouton => {
+    bouton.style.backgroundColor = '#ED5234';
+    bouton.style.color = 'white';
+  })
+  const lia = document.getElementById('lia');
+  if (lia) lia.style.textDecorationColor = '#ED5234';
+  document.querySelectorAll('.ab').forEach(bouton => {
+    bouton.style.backgroundColor = '#ED5234';
+    bouton.style.color = 'white';
+  });
+ 
+  document.getElementById('labelVrai').style.color = '';
+  document.getElementById('labelFaux').style.color = '';
+  document.getElementById('labelVraibis').style.color = '';
+  document.getElementById('labelFauxbis').style.color = '';
+
+  document.getElementById('resultat').textContent = '';
+  document.getElementById('resul').textContent = '';
+  document.getElementById('resu').textContent = '';
+  document.getElementById('coucou').textContent = '';
+  document.getElementById('cc').textContent = '';
+  document.getElementById('feu').innerHTML = '';
+
+  document.getElementById('btnValider').disabled = false;
+  document.getElementById('btnValiderbis').disabled = false;
+  document.getElementById('Validerr').disabled = false;
+  document.getElementById('Valideer').disabled = false;
+  document.getElementById('Validder').disabled = false;
+
+  document.getElementById('Id_Reponse').value = '';
+  document.getElementById('choix').selectedIndex = 0;
+  document.getElementById('choixx').selectedIndex = 0;
+
+  const radios = document.querySelectorAll('input[type="radio"]');
+  radios.forEach(radio => {
+    radio.checked = false;
+  });
+}
+
+</script>
+</body>
+</html>
